@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xsi:noNamespaceSchemaLocation="../Documentation/Schemas/IndustryConstructibleElement.xsd">
+
+    <StarSystemImprovementDefinition
+        Name="StarSystemImprovementDefenseModMilitaryOutposts"
+        SubCategory="SubCategoryDefense"
+        ScoreProvider="StarSystemImprovementBuilt">
+        <SupervisorGain Name="Military" />
+
+        <Cost ResourceName="SystemProduction">320</Cost>
+
+        <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+
+        <PathPrerequisite Inverted="true"
+                          Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementDefenseModMilitaryOutposts,!FastForwardedImprovement</PathPrerequisite>
+
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyModMilitaryOutposts</TechnologyPrerequisite>
+
+        <SimulationDescriptorReference Name="StarSystemImprovementDefenseModMilitaryOutposts" />
+        
+        <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Weak" />
+        
+        <SimulationDescriptorReference Name="DefenseConstruction" />
+
+        <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionDefense1"/>
+    </StarSystemImprovementDefinition>
+
+</Datatable>

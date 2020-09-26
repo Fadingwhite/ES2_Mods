@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xsi:noNamespaceSchemaLocation="../../Documentation/Schemas/Amplitude.Unity.Localization.LocalizationDatatableElement.xsd">
+
+    <LocalizationPair Name="%TechnologyDefinitionModMilitaryOutpostsTitle">Galactic Expansion Programs</LocalizationPair>
+
+    <LocalizationPair Name="%TechnologyDefinitionModMilitaryOutpostsDescription">With propaganda appropriated for galactic expansion, conscription programs and development plans can be attuned not only for the growth of army forces at home but for official military colonization efforts.</LocalizationPair>
+
+    <LocalizationPair Name="%StarSystemImprovementDefenseModMilitaryOutpostsTitle">Military Outpost Infrastructure</LocalizationPair>
+
+    <LocalizationPair Name="%StarSystemImprovementDefenseModMilitaryOutpostsDescription">Outright designation of system colonies as military outposts becomes possible through projection of military force and adequate delegation of system resources. Side effects include stagnated growth across all sectors, as few want to live under the more-than-average likelyhood of invasion. However, system defense capabilities increase when infrastructure is appropriated for defence and all citizens are expected to defend empire territory - and their lives.</LocalizationPair>
+
+</Datatable>

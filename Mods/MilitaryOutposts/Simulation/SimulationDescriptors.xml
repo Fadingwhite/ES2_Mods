@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xsi:noNamespaceSchemaLocation="../Documentation/Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="TechnologyModMilitaryOutposts"
+                          Type="Technology" />
+
+    <SimulationDescriptor Name="StarSystemImprovementDefenseModMilitaryOutposts"
+                          Type="StarSystemImprovement">
+
+        <Modifier TargetProperty="OverColonizationThreshold"
+                  Operation="Addition"
+                  Value="1"
+                  Path="../ClassEmpire"
+                  TooltipHidden="false" />
+
+        <Modifier TargetProperty="SystemFIDSIPercent"
+                  Operation="Subtraction"
+                  Value="0.75"
+                  Path="./ClassColonizedStarSystem" />
+
+        <BinaryModifier TargetProperty="MaximumSystemManpower"
+                        Operation="Addition"
+                        Left="$(Population)"
+                        BinaryOperation="Multiplication"
+                        Right="25"
+                        Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"
+                        SearchValueFromPath="true" />
+
+        <BinaryModifier TargetProperty="GroundBattleDefenderManpowerLimit"
+                        Operation="Addition"
+                        Left="10"
+                        BinaryOperation="Multiplication"
+                        Right="$(Population)"
+                        Path="./ClassColonizedStarSystem"
+                        SearchValueFromPath="true" />
+        
+    </SimulationDescriptor>
+
+</Datatable>

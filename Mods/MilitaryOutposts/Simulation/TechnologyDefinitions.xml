@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xsi:noNamespaceSchemaLocation="../Documentation/Schemas/ScienceConstructibleElement.xsd">
+
+    <TechnologyDefinition
+        Name="TechnologyDefinitionModMilitaryOutposts"
+        TechnologyStage="TechnologyStageDefinitionMilitary2"
+        Category="CategoryTechnologyMilitary"
+        SubCategoryInQuests="TechnoMilitary"
+        ScoreProvider="TechnologyUnlocked">
+        <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantMilitaryMultiplier)</CustomCost>
+        <SimulationDescriptorReference Name="TechnologyModMilitaryOutposts"/>
+        <SimulationDescriptorReference Name="TechnologyMilitaryGameplay"/>
+        <SimulationDescriptorReference Name="TechnologyCountMilitaryIncreaseStage2"/>
+        <SimulationDescriptorReference Name="TechnologyCounter"/>
+        <PopulationEvent Name="PopulationPoliticalEventMilitaristTechnology"/>
+
+        <HelperVariable Name="TurnVariable"/>
+        <HelperVariable Name="EnemyEmpires"/>
+        <HelperFormula>$(TurnVariable) * 15 + 30 * $(EnemyEmpires)</HelperFormula>
+    </TechnologyDefinition>
+
+</Datatable>

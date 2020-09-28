@@ -20,7 +20,7 @@
 
         <SimulationDescriptorReference Name="StarSystemImprovementDefenseModMilitaryOutposts" />
         
-        <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Weak" />
+        <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Extreme" />
         
         <SimulationDescriptorReference Name="DefenseConstruction" />
 

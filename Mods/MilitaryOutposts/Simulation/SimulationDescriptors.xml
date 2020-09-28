@@ -24,13 +24,13 @@
                         Operation="Addition"
                         Left="$(Population)"
                         BinaryOperation="Multiplication"
-                        Right="25"
+                        Right="100"
                         Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"
                         SearchValueFromPath="true" />
 
         <BinaryModifier TargetProperty="GroundBattleDefenderManpowerLimit"
                         Operation="Addition"
-                        Left="10"
+                        Left="50"
                         BinaryOperation="Multiplication"
                         Right="$(Population)"
                         Path="./ClassColonizedStarSystem"

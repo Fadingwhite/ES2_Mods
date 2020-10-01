@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xsi:noNamespaceSchemaLocation="Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+    <RuntimeModule Name="IntuitiveGUIColors"
+                   Type="Extension"
+                   Version="1.0">
+        <Title>Intuitive GUI Colors</Title>
+
+        <Description>Please remember to [img]https://i.imgur.com/fVVaDCS.gif[/img] if you enjoy the mod![hr][/hr][h1]Mod Description[/h1][hr][/hr]This mod is purely visual. It is an attempt to make the graphical user interface of Endless Space 2 more intuitive. This is done by changing the colors of various labels and/or icons within the game. Full list of changes:[list][*]Colonizable [img]https://imgur.com/HQEkicj.png[/img] vs. non-colonizable [img]https://imgur.com/7degBe1.png[/img] planets.[*]Overpopulation indicators on planets [img]https://imgur.com/7degBe1.png[/img].[*]Positive [img]https://imgur.com/HQEkicj.png[/img] vs. negative [img]https://imgur.com/7degBe1.png[/img] population growth gauge indicator on system management screen.[*]General errors/failures [img]https://imgur.com/7degBe1.png[/img].[/list][hr][/hr][h1]Mod Reasoning[/h1]Icon or label colors are frequently unintuitive. For example, the color of the label indicating a planet is colonizable is exactly the same as the color indicating it is not colonizable. This is frustrating to experience as the player, the game refuses to give you visual cues for many things that could really use them.[hr][/hr][h1]Future Development[/h1][list][*]Continuously improve GUI.[*]Add improved ModIcon.png.[*]Address suggestions.[/list]If you have any suggestions or improvements for the mod, or if you have played with the mod and just have some feedback, please do not hesitate to leave a comment.[hr][/hr][h1]Compatibility[/h1]This is an Extension mod and thus should not have direct compatibilty issues with other mods.</Description>
+
+        <Author>Fadingwhite</Author>
+
+        <Homepage>https://github.com/Fadingwhite/ES2_Mods</Homepage>
+
+        <PreviewImageFile>ModIcon.png</PreviewImageFile>
+
+        <ReleaseNotes>1.0: -Initial release.</ReleaseNotes>
+
+        <Tags>Art, Interface, UI, Gameplay</Tags>
+
+        <Plugins>
+            <DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+                <ExtraTypes>
+                    <ExtraType DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+                </ExtraTypes>
+
+                <FilePath>Gui/GuiElements.xml</FilePath>
+            </DatabasePlugin>
+        </Plugins>
+    </RuntimeModule>
+</Datatable>
